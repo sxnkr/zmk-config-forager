@@ -1,5 +1,5 @@
 # My ZMK forager config
-
+ 
 ZMK config for the [Forager](https://github.com/carrefinho/forager), a 34-key
 wireless split keyboard running on Seeed XIAO BLE (nRF52840) controllers.
 Left half is the central (connects to the computer); right half links to the left.
