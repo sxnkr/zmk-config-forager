@@ -44,6 +44,12 @@
     quick-tap-ms = <175>;
 };
 
+// Manual power-off (the Forager has no power switch): must be held 2s to
+// fire, on top of the two-handed ADJ chord. Wake each half with a keypress.
+&soft_off {
+    hold-time-ms = <2000>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -128,9 +134,6 @@
             ignore-modifiers;
         };
 
-        &soft_off {
-            hold-time-ms = <2000>;
-        };
     };
 
     combos {
