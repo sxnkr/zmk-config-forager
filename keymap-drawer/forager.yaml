@@ -38,14 +38,14 @@ layers:
   NAV:
   - Ctl+Sft+C
   - Ctl+Sft+V
-  - Gui+A
+  - Ctl+A
   - ''
   - ''
-  - Gui+Z
-  - Gui+X
-  - Gui+C
-  - Gui+V
-  - Gui+Sft+Z
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Sft+Z
   - LGUI
   - LALT
   - LCTRL
@@ -198,19 +198,13 @@ combos:
   k: '&num_word 2'
   l: [BASE]
 - p: [21, 22]
-  k: Gui+C
+  k: Ctl+C
   l: [BASE]
 - p: [22, 23]
-  k: Gui+V
+  k: Ctl+V
   l: [BASE]
 - p: [21, 23]
-  k: Gui+X
-  l: [BASE]
-- p: [20, 21]
-  k: Ctl+Sft+C
-  l: [BASE]
-- p: [20, 22]
-  k: Ctl+Sft+V
+  k: Ctl+X
   l: [BASE]
 - p: [16, 26]
   k: '-'
