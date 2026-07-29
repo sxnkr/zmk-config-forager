@@ -36,8 +36,8 @@ layers:
   - {t: RET, h: SYM}
   - {t: BSPC, h: NUM}
   NAV:
-  - Ctrl+Sft+C
-  - Ctrl+Sft+V
+  - Ctl+Sft+C
+  - Ctl+Sft+V
   - Gui+A
   - ''
   - ''
@@ -56,10 +56,10 @@ layers:
   - UP
   - RIGHT
   - '&caps_word'
-  - Ctrl+Left
-  - Ctrl+Right
-  - Ctrl+Bspc
-  - Ctrl+Del
+  - Ctl+LEFT
+  - Ctl+RGHT
+  - Ctl+BSPC
+  - Ctl+DEL
   - ''
   - INS
   - HOME
@@ -85,7 +85,7 @@ layers:
   - '5'
   - '6'
   - '='
-  - ';'
+  - ;
   - ''
   - ''
   - ''
@@ -109,7 +109,7 @@ layers:
   - (
   - '['
   - '{'
-  - '<'
+  - <
   - '!'
   - )
   - ']'
@@ -122,10 +122,10 @@ layers:
   - '|'
   - '~'
   - '-'
-  - '/'
+  - /
   - ^
   - '='
-  - ';'
+  - ;
   - $
   - '#'
   - '@'
@@ -134,11 +134,11 @@ layers:
   - '`'
   - _
   - \
-  - "'"
+  - ''''
   - '"'
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - {type: held}
   - ''
   ADJ:
   - F1
@@ -225,10 +225,10 @@ combos:
   k: '`'
   l: [BASE]
 - p: [1, 2]
-  k: Alt+Tab
+  k: Alt+TAB
   l: [BASE]
 - p: [6, 7]
-  k: Sft+Tab
+  k: Sft+TAB
   l: [BASE]
 - p: [26, 27]
   k: RET
@@ -236,6 +236,3 @@ combos:
 - p: [27, 28]
   k: TAB
   l: [BASE]
-# - p: [24, 25]
-#   k: PrtSc
-#   l: [BASE]
