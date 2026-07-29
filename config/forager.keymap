@@ -225,6 +225,22 @@
             require-prior-idle-ms = <150>;
         };
 
+        combo_term_copy {
+            bindings = <&kp LC(LS(C))>;
+            key-positions = <20 21>;        // Z + X (terminal copy)
+            layers = <BASE>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_term_paste {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <20 22>;        // Z + C (terminal paste)
+            layers = <BASE>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
+        };
+
         // -- Tier 3: Vertical Symbol Combos (from Corne) --
 
         combo_minus {
