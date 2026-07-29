@@ -36,16 +36,16 @@ layers:
   - {t: RET, h: SYM}
   - {t: BSPC, h: NUM}
   NAV:
+  - Ctrl+Sft+C
+  - Ctrl+Sft+V
+  - Gui+A
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - Gui+Sft+Z
-  - Gui+V
-  - Gui+C
-  - Gui+X
   - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+Sft+Z
   - LGUI
   - LALT
   - LCTRL
@@ -55,11 +55,11 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - CAPS
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&caps_word'
+  - Ctrl+Left
+  - Ctrl+Right
+  - Ctrl+Bspc
+  - Ctrl+Del
   - ''
   - INS
   - HOME
@@ -71,105 +71,105 @@ layers:
   - {t: ▽, type: trans}
   - BSPC
   NUM:
-  - '['
   - '7'
   - '8'
   - '9'
+  - '['
   - ']'
   - ''
   - ''
   - ''
   - ''
   - ''
-  - ;
   - '4'
   - '5'
   - '6'
   - '='
+  - ';'
   - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - '`'
+  - ''
+  - ''
+  - ''
+  - ''
   - '1'
   - '2'
   - '3'
+  - '`'
   - \
   - ''
   - ''
-  - ','
-  - .
+  - ''
+  - ''
   - ''
   - SPACE
   - '0'
   - RET
   - {t: BSPC, type: held}
   SYM:
-  - '{'
-  - '&'
-  - '*'
   - (
-  - '}'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ':'
-  - $
-  - '%'
-  - ^
-  - +
-  - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - '~'
+  - '['
+  - '{'
+  - '<'
   - '!'
-  - '@'
-  - '#'
-  - '|'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
   - )
-  - {type: held}
+  - ']'
+  - '}'
+  - '>'
+  - '?'
+  - +
+  - '*'
+  - '&'
+  - '|'
+  - '~'
+  - '-'
+  - '/'
+  - ^
+  - '='
+  - ';'
+  - $
+  - '#'
+  - '@'
+  - '%'
+  - ':'
+  - '`'
+  - _
+  - \
+  - "'"
+  - '"'
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - ''
   ADJ:
-  - '&studio_unlock'
-  - ''
-  - ''
-  - ''
-  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - MUTE
   - VOL DN
   - VOL UP
   - PP
-  - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - ''
-  - OUT TOG
+  - NEXT
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - PREV
+  - STOP
+  - '&studio_unlock'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - F11
+  - F12
   - '&bootloader'
   - '&sys_reset'
   - '&soft_off'
-  - ''
-  - ''
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - BT CLR
-  - ''
-  - ''
-  - ''
+  - OUT TOG
   - ''
   - {type: held}
   - ''
@@ -224,3 +224,18 @@ combos:
 - p: [11, 21]
   k: '`'
   l: [BASE]
+- p: [1, 2]
+  k: Alt+Tab
+  l: [BASE]
+- p: [6, 7]
+  k: Sft+Tab
+  l: [BASE]
+- p: [26, 27]
+  k: RET
+  l: [BASE]
+- p: [27, 28]
+  k: TAB
+  l: [BASE]
+# - p: [24, 25]
+#   k: PrtSc
+#   l: [BASE]
