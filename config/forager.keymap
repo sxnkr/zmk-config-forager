@@ -338,7 +338,7 @@
             bindings = <
 &kp LC(LS(C)) &kp LC(LS(V)) &kp LG(A)   &none          &none          &kp LG(Z)    &kp LG(X)     &kp LG(C)     &kp LG(V)   &kp LG(LS(Z))
 &kp LGUI      &kp LALT      &kp LCTRL    &kp LSHFT      &none          &kp LEFT     &kp DOWN      &kp UP        &kp RIGHT   &caps_word
-&kp LC(LEFT)  &kp LC(RGHT)  &kp LC(BSPC) &kp LC(DEL)    &none          &kp INS      &kp HOME      &kp PG_DN     &kp PG_UP   &kp END
+&kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(BSPC) &kp LC(DEL)    &none          &kp INS      &kp HOME      &kp PG_DN     &kp PG_UP   &kp END
                                       &none          &none          &trans        &kp BSPC
             >;
         };
