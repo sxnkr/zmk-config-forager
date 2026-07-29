@@ -57,7 +57,7 @@ layers:
   - RIGHT
   - '&caps_word'
   - Ctl+LEFT
-  - Ctl+RGHT
+  - Ctl+RIGHT
   - Ctl+BSPC
   - Ctl+DEL
   - ''
