@@ -39,7 +39,7 @@
 				{ "label": "/", "row": 2, "col": 11, "x": 12, "y": 2.6 },
 
 				{
-					"label": "TAB",
+					"label": "SPACE",
 					"row": 3,
 					"col": 4,
 					"x": 4.1,
@@ -49,7 +49,7 @@
 					"ry": 4.4
 				},
 				{
-					"label": "BACKSPACE",
+					"label": "TAB",
 					"row": 3,
 					"col": 5,
 					"x": 5.1,
@@ -69,7 +69,7 @@
 					"ry": 5.05
 				},
 				{
-					"label": "]",
+					"label": "BSPC",
 					"row": 3,
 					"col": 8,
 					"x": 8.15,

@@ -35,10 +35,10 @@ keymap changes.
 ### Home row mods
 
 There are no dedicated modifier keys — the home row does double duty.
-**Tap** `A S D F / J K L ;` for letters, **hold** for `⌘ ⌥ ⌃ ⇧` (mirrored on
-both hands). The timing is tuned urob-style so mods never fire during normal
-typing: holds register after 280 ms, only for cross-hand combinations
-(`hold-trigger-key-positions`), and never mid-typing-flow
+**Tap** `A S D F / J K L ;` for letters, **hold** for `Super Alt Ctrl Shift`
+(mirrored on both hands). The timing is tuned urob-style so mods never fire
+during normal typing: holds register after 280 ms, only for cross-hand
+combinations (`hold-trigger-key-positions`), and never mid-typing-flow
 (`require-prior-idle-ms`). Just type; press-and-hold when you want a modifier.
 
 ### Punctuation morphs
@@ -58,7 +58,7 @@ typing: holds register after 280 ms, only for cross-hand combinations
 
 ### Combos
 
-Press two neighboring keys at once:
+Press two neighboring keys at once. Clipboard uses **Ctrl** (Linux/Windows):
 
 | Combo | Result | | Combo | Result |
 |---|---|---|---|---|
@@ -67,8 +67,13 @@ Press two neighboring keys at once:
 | `K`+`L` | Enter | | `J`+`M` | `-` |
 | `I`+`O` | Backspace | | `H`+`N` | `_` |
 | `O`+`P` | Delete | | `F`+`V` | `=` |
-| `X`+`C` | ⌘C copy | | `S`+`X` | `` ` `` |
-| `C`+`V` | ⌘V paste | | `X`+`V` | ⌘X cut |
+| `X`+`C` | Ctrl+C copy | | `S`+`X` | `` ` `` |
+| `C`+`V` | Ctrl+V paste | | `X`+`V` | Ctrl+X cut |
+| `W`+`E` | Alt+Tab | | `U`+`I` | Shift+Tab |
+| `M`+`,` | Enter | | `,`+`.` | Tab |
+
+Hold **SPACE** (NAV) for arrows, word nav, and clipboard again on the top row
+(Ctrl+Z/X/C/V, Ctrl+Shift+C/V for terminal).
 
 ## Connecting to multiple systems
 
@@ -78,9 +83,9 @@ its own paired computer. All bluetooth keys live on the ADJ layer
 
 | ADJ chord + | Action |
 |---|---|
-| `J` / `K` / `L` / `;` | Switch to profile 0 / 1 / 2 / 3 |
-| `N` | Clear the **current** profile's pairing (`BT_CLR`) |
-| `H` | Toggle output between USB and bluetooth (`OUT_TOG`) |
+| `O` / `P` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
+| `,` | Clear the **current** profile's pairing (`BT_CLR`) |
+| `.` | Toggle output between USB and bluetooth (`OUT_TOG`) |
 
 To pair a new computer: switch to an unused profile, then add
 "**forager_sk**" from that computer's bluetooth settings. To move between
@@ -88,11 +93,11 @@ already-paired computers, just switch profiles — the keyboard drops the
 current host and connects to the profile's host in a second or two.
 
 If a pairing misbehaves, clear it on **both** sides: forget the keyboard in
-the computer's bluetooth settings *and* press ADJ chord + `N` with that
+the computer's bluetooth settings *and* press ADJ chord + `,` with that
 profile active — a half-cleared pairing causes connect-but-no-typing states.
 
 When charging over USB, USB output works regardless of profile (toggle with
-ADJ chord + `H` if the wrong output is active).
+ADJ chord + `.` if the wrong output is active).
 
 ## Power and sleep
 
@@ -103,7 +108,7 @@ The Forager has no power switch; power is managed in firmware:
   drain. Tap any key on a sleeping half to wake it; the waking tap itself
   is swallowed, and reconnection takes a second or two.
 - **Soft off** (manual "power button", e.g. for transport): hold SPACE+RET
-  and hold **C for 2 seconds**. Both halves power off completely. Press a
+  and hold **B for 2 seconds**. Both halves power off completely. Press a
   key on each half to turn them back on.
 - Charge over USB-C on either half.
 
@@ -118,7 +123,7 @@ install locally.
    half, and `settings_reset`.
 2. Put the half you're flashing into bootloader mode:
    - **Double-tap the reset button** on its XIAO BLE, or
-   - from the keyboard: hold SPACE+RET and tap **Z** (`&bootloader`, ADJ
+   - from the keyboard: hold SPACE+RET and tap **C** (`&bootloader`, ADJ
      layer) — this only reaches the left half's bootloader.
    The board mounts as a USB drive named `XIAO-SENSE`.
 3. Drag the matching `.uf2` onto the drive. It flashes itself and reboots;
@@ -140,7 +145,7 @@ bonds, so you'll re-pair with everything. See the
   diagram above re-draws itself on every push.
 - **Live experiments:** [ZMK Studio](https://zmk.studio) in Chrome lets you
   remap keys over USB with no reflash — connect the left half by cable and
-  press ADJ chord + `Q` (`&studio_unlock`) to allow changes. Studio changes
+  press ADJ chord + `K` (`&studio_unlock`) to allow changes. Studio changes
   live on the keyboard only, so make keeper-changes in the repo.
 
 ## Troubleshooting
