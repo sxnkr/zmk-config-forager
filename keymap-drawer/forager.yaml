@@ -207,10 +207,10 @@ combos:
   k: Gui+X
   l: [BASE]
 - p: [20, 21]
-  k: Ctrl+Sft+C
+  k: Ctl+Sft+C
   l: [BASE]
 - p: [20, 22]
-  k: Ctrl+Sft+V
+  k: Ctl+Sft+V
   l: [BASE]
 - p: [16, 26]
   k: '-'
