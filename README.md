@@ -35,7 +35,7 @@ keymap changes.
 ### Home row mods
 
 There are no dedicated modifier keys — the home row does double duty.
-**Tap** `A S D F / J K L ;` for letters, **hold** for `Super Alt Ctrl Shift`
+**Tap** `A S D F / J K L '` for letters, **hold** for `Super Alt Ctrl Shift`
 (mirrored on both hands). The timing is tuned urob-style so mods never fire
 during normal typing: holds register after 280 ms, only for cross-hand
 combinations (`hold-trigger-key-positions`), and never mid-typing-flow
@@ -82,8 +82,8 @@ Hold **SPACE** (NAV) for arrows, word nav, and clipboard again on the top row
 Super-heavy shortcuts never need home-row-mod timing:
 
 - **Super+letter** — hold the home-row Super on the *opposite* hand
-  (`A` for `H J K L I P M`, `;` for left-hand letters).
-- **Super+number / `[` `]` / `` ` ``** — hold BSPC (NUM), hold `;` (plain
+  (`A` for `H J K L I P M`, `'` for left-hand letters).
+- **Super+number / `[` `]` / `` ` ``** — hold BSPC (NUM), hold `'` (plain
   Super on NUM), tap the key. Add `J` (plain Shift) to move the window there.
 - **Super+Shift+arrows** — hold SPACE (NAV), hold `A` + `F` (plain Super +
   Shift), tap an arrow on HJKL.
@@ -97,7 +97,7 @@ its own paired computer. All bluetooth keys live on the ADJ layer
 
 | ADJ chord + | Action |
 |---|---|
-| `L` / `;` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
+| `L` / `'` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
 | `,` | Clear the **current** profile's pairing (`BT_CLR`) |
 | `.` | Toggle output between USB and bluetooth (`OUT_TOG`) |
 
