@@ -27,9 +27,9 @@ keymap changes.
 
 | Hold | Layer |
 |---|---|
-| SPACE (left thumb) | **NAV** — vim arrows on HJKL, clipboard on the top row, page nav below |
-| RET (right thumb) | **SYM** — programming symbols on the left hand, parens on the thumbs |
-| BSPC (right thumb) | **NUM** — numpad on the left hand, `0` on the thumb |
+| SPACE (left thumb) | **NAV** — vim arrows on HJKL, clipboard on the top row, page nav below, plain mods on the left home row |
+| RET (right thumb) | **SYM** — symmetric brackets and programming symbols across both hands |
+| BSPC (right thumb) | **NUM** — numpad on the left hand, `0` on the thumb, `-` on H, plain mods on the right home row |
 | SPACE + RET together | **ADJ** — bluetooth, volume, output, system keys |
 
 ### Home row mods
@@ -54,7 +54,8 @@ combinations (`hold-trigger-key-positions`), and never mid-typing-flow
   capitalized until space or punctuation. Great for `CONSTANTS`.
 - **Num Word** — press `J`+`K` together: the NUM layer latches so you can
   type `3.14` or `2026-07-24` with both hands free, and releases
-  automatically at the first non-number key.
+  automatically at the first non-number key. `,` `.` `/` pass through from
+  the base layer and `-` is on `H`.
 
 ### Combos
 
@@ -71,9 +72,22 @@ Press two neighboring keys at once. Clipboard uses **Ctrl** (Linux/Windows):
 | `C`+`V` | Ctrl+V paste | | `X`+`V` | Ctrl+X cut |
 | `W`+`E` | Alt+Tab | | `U`+`I` | Shift+Tab |
 | `M`+`,` | Enter | | `,`+`.` | Tab |
+| `B`+`N` | Print Screen | | | |
 
 Hold **SPACE** (NAV) for arrows, word nav, and clipboard again on the top row
-(Ctrl+Z/X/C/V, Ctrl+Shift+C/V for terminal).
+(Ctrl+Z/X/C/V, Ctrl+Shift+C/V for terminal, Super+V clipboard history on `R`).
+
+### Window manager (Hyprland) chords
+
+Super-heavy shortcuts never need home-row-mod timing:
+
+- **Super+letter** — hold the home-row Super on the *opposite* hand
+  (`A` for `H J K L I P M`, `;` for left-hand letters).
+- **Super+number / `[` `]` / `` ` ``** — hold BSPC (NUM), hold `;` (plain
+  Super on NUM), tap the key. Add `J` (plain Shift) to move the window there.
+- **Super+Shift+arrows** — hold SPACE (NAV), hold `A` + `F` (plain Super +
+  Shift), tap an arrow on HJKL.
+- `W`+`E` sends Alt+Tab, which Hyprland binds to window cycling.
 
 ## Connecting to multiple systems
 
@@ -83,7 +97,7 @@ its own paired computer. All bluetooth keys live on the ADJ layer
 
 | ADJ chord + | Action |
 |---|---|
-| `O` / `P` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
+| `L` / `;` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
 | `,` | Clear the **current** profile's pairing (`BT_CLR`) |
 | `.` | Toggle output between USB and bluetooth (`OUT_TOG`) |
 
