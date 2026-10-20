@@ -32,6 +32,8 @@ keymap changes.
 | BSPC (right thumb) | **NUM** — numpad on the left hand, `0` on the thumb, `-` on H, plain mods on the right home row |
 | SPACE + RET together | **ADJ** — bluetooth, volume, output, system keys |
 
+The left inner thumb is **Esc** (one tap, no timing — vim-friendly); Tab lives on the `S`+`D` and `,`+`.` combos.
+
 ### Home row mods
 
 There are no dedicated modifier keys — the home row does double duty.
