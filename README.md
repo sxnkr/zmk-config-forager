@@ -30,7 +30,7 @@ keymap changes.
 | SPACE (left thumb) | **NAV** — vim arrows on HJKL, clipboard on the top row, page nav below, plain mods on the left home row |
 | RET (right thumb) | **SYM** — symmetric brackets and programming symbols across both hands |
 | BSPC (right thumb) | **NUM** — numpad on the left hand, `0` on the thumb, `-` on H, plain mods on the right home row |
-| SPACE + RET together | **ADJ** — bluetooth, volume, output, system keys |
+| SPACE + RET together | **ADJ** — F-keys (numpad shape), bluetooth, media, system keys |
 
 The left inner thumb is **Esc** (one tap, no timing — vim-friendly); Tab lives on the `S`+`D` and `,`+`.` combos.
 
@@ -99,8 +99,8 @@ its own paired computer. All bluetooth keys live on the ADJ layer
 
 | ADJ chord + | Action |
 |---|---|
-| `L` / `'` / `N` / `M` | Switch to profile 0 / 1 / 2 / 3 |
-| `,` | Clear the **current** profile's pairing (`BT_CLR`) |
+| `Y` / `U` / `I` / `O` | Switch to profile 0 / 1 / 2 / 3 |
+| `P` | Clear the **current** profile's pairing (`BT_CLR`) |
 | `.` | Toggle output between USB and bluetooth (`OUT_TOG`) |
 
 To pair a new computer: switch to an unused profile, then add
@@ -109,7 +109,7 @@ already-paired computers, just switch profiles — the keyboard drops the
 current host and connects to the profile's host in a second or two.
 
 If a pairing misbehaves, clear it on **both** sides: forget the keyboard in
-the computer's bluetooth settings *and* press ADJ chord + `,` with that
+the computer's bluetooth settings *and* press ADJ chord + `P` with that
 profile active — a half-cleared pairing causes connect-but-no-typing states.
 
 When charging over USB, USB output works regardless of profile (toggle with
@@ -139,7 +139,7 @@ install locally.
    half, and `settings_reset`.
 2. Put the half you're flashing into bootloader mode:
    - **Double-tap the reset button** on its XIAO BLE, or
-   - from the keyboard: hold SPACE+RET and tap **C** (`&bootloader`, ADJ
+   - from the keyboard: hold SPACE+RET and tap **T** (`&bootloader`, ADJ
      layer) — this only reaches the left half's bootloader.
    The board mounts as a USB drive named `XIAO-SENSE`.
 3. Drag the matching `.uf2` onto the drive. It flashes itself and reboots;
@@ -161,7 +161,7 @@ bonds, so you'll re-pair with everything. See the
   diagram above re-draws itself on every push.
 - **Live experiments:** [ZMK Studio](https://zmk.studio) in Chrome lets you
   remap keys over USB with no reflash — connect the left half by cable and
-  press ADJ chord + `K` (`&studio_unlock`) to allow changes. Studio changes
+  press ADJ chord + `/` (`&studio_unlock`) to allow changes. Studio changes
   live on the keyboard only, so make keeper-changes in the repo.
 
 ## Troubleshooting
